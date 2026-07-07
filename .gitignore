@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+data/raw/*
+data/processed/*
+logs/*
+reports_output/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!logs/.gitkeep
+!reports_output/.gitkeep

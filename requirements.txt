@@ -1,0 +1,23 @@
+# requirements.txt
+# Biomedical Data Analytics Platform - Python dependencies
+#
+# NOTE: This project also requires Mosquitto (a local MQTT broker) to be
+# installed and running on the same machine as main.py, since the Arduino
+# now operates as a WiFi Access Point (no internet access). Mosquitto is
+# a system-level service, NOT a Python package, so it is not listed below.
+# Install it separately, e.g. on macOS: brew install mosquitto
+
+# MQTT communication (subscribes to the local Mosquitto broker on localhost)
+paho-mqtt>=1.6.1
+
+# Data handling for dashboard and reports
+pandas>=2.0.0
+
+# Web dashboard for real-time visualization
+streamlit>=1.30.0
+
+# PDF report generation
+reportlab>=4.0.0
+
+# Testing framework
+pytest>=7.4.0
